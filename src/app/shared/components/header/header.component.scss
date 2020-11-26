@@ -1,0 +1,25 @@
+
+.site-header{
+    background-color: #1d4354;
+    color: #fff;
+    
+    .nav-icon{
+        color: #fff;
+        &:hover{
+            color: #6fda44;
+        }
+        .mat-icon{
+            font-size: 34px;
+        }
+    }
+    button{
+        &:hover{
+            color: #6fda44;
+        }
+    }
+}
+button, input{
+    &:focus{
+        outline: none;
+    }
+}

@@ -1,14 +1,19 @@
 import { Component, OnInit } from '@angular/core';
 
+
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
-  styleUrls: ['./header.component.less']
+  styleUrls: ['./header.component.scss']
 })
-export class HeaderComponent implements OnInit {
 
+export class HeaderComponent implements OnInit {
+  searchKey = '';
   constructor() { }
 
+  searchJobs(): void{
+    console.log(this.searchKey)
+  }
   ngOnInit(): void {
   }
 

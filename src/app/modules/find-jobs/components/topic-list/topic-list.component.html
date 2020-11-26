@@ -1,0 +1,8 @@
+<div class="topic-list">
+    <h1>Find Work</h1>
+    <mat-selection-list #domestic [multiple]="false" [(ngModel)]="selectedDomestic" (ngModelChange)="onNgModelChange($event)">
+        <mat-list-option *ngFor="let domestic of domestics">
+            {{domestic}}
+        </mat-list-option>
+    </mat-selection-list>
+</div>
