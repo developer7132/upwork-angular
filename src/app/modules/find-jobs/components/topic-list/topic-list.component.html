@@ -1,8 +1,21 @@
 <div class="topic-list">
-    <h1>Find Work</h1>
-    <mat-selection-list #domestic [multiple]="false" [(ngModel)]="selectedDomestic" (ngModelChange)="onNgModelChange($event)">
-        <mat-list-option *ngFor="let domestic of domestics">
-            {{domestic}}
+    <mat-selection-list #domestic id="domestic" [multiple]="false" [(ngModel)]="selectedDomestic" (ngModelChange)="onNgModelChange($event)">
+        <mat-list-option *ngFor="let domestic of domestics" [value]="domestic.name">
+            {{domestic.name}}
+        </mat-list-option>
+    </mat-selection-list>
+
+    <h1 class="mt-3">Recent Search</h1>
+    <mat-selection-list #searchItem id="searchItem" [multiple]="false" >
+        <mat-list-option class="mt-2" *ngFor="let searchItem of recentSearch">
+            {{searchItem}}
+        </mat-list-option>
+    </mat-selection-list>
+
+    <h1 class="mt-3">My Categories</h1>
+    <mat-selection-list #category id="category" [multiple]="false">
+        <mat-list-option class="mt-2" *ngFor="let category of MyCategories">
+            {{category}}
         </mat-list-option>
     </mat-selection-list>
 </div>

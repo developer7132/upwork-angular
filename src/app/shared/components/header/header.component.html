@@ -20,8 +20,8 @@
         <span class="example-spacer"></span>
     </a>
       <input [(ngModel)]="searchKey" placeholder="Find jobs" (keyup.enter)="searchJobs()">
-      <a mat-button [matMenuTriggerFor]="belowMenu">Find Work</a>
-      <mat-menu #belowMenu="matMenu" yPosition="below">
+      <a mat-button [matMenuTriggerFor]="findWork">Find Work</a>
+      <mat-menu #findWork="matMenu" yPosition="below">
         <a mat-menu-item routerLink="/find-work">Find work</a>
         <a mat-menu-item routerLink="/find-work/saved-jobs">Saved Jobs</a>
         <a mat-menu-item routerLink="/find-work/proposals">Proposals</a>
@@ -30,18 +30,18 @@
         <a mat-menu-item routerLink="/find-work/test">Upwork Readiness Test</a>
         <a mat-menu-item routerLink="/find-work/project-dashboard">My Project Dashboard</a>
       </mat-menu>
-      <button mat-button [matMenuTriggerFor]="belowMenu">My Jobs</button>
-      <mat-menu #belowMenu="matMenu" yPosition="below">
+      <button mat-button [matMenuTriggerFor]="myJobs">My Jobs</button>
+      <mat-menu #myJobs="matMenu" yPosition="below">
         <button mat-menu-item>Item 1</button>
         <button mat-menu-item>Item 2</button>
       </mat-menu>
-      <button mat-button [matMenuTriggerFor]="belowMenu">Report</button>
-      <mat-menu #belowMenu="matMenu" yPosition="below">
+      <button mat-button [matMenuTriggerFor]="report">Report</button>
+      <mat-menu #report="matMenu" yPosition="below">
         <button mat-menu-item>Item 1</button>
         <button mat-menu-item>Item 2</button>
       </mat-menu>
-      <button mat-button [matMenuTriggerFor]="belowMenu">Messages</button>
-      <mat-menu #belowMenu="matMenu" yPosition="below">
+      <button mat-button [matMenuTriggerFor]="messages">Messages</button>
+      <mat-menu #messages="matMenu" yPosition="below">
         <button mat-menu-item>Item 1</button>
         <button mat-menu-item>Item 2</button>
       </mat-menu>

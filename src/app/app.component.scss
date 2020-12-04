@@ -1,0 +1,13 @@
+$bg_color: #f1f2f4;
+$light_green: #6fda44;
+$dark_green: #37a000;
+$light_grey: #e0e0e0;
+
+body{
+    background-color: $bg_color !important;
+}
+
+.border-grey-5{
+    border: 1px solid $light_grey;
+    border-radius: 5px;
+}

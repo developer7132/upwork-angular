@@ -1,0 +1,13 @@
+<div class="job-list">
+    <div class="see-next-jobs">
+        <p class="p-2 w-100">There are new jobs. Click to see next 20.</p>
+    </div>
+    <div class="job-list-header">
+        
+    </div>
+    <app-job-tile 
+        *ngFor="let job of jobs"
+        [job]="job"
+    >
+    </app-job-tile>
+</div>

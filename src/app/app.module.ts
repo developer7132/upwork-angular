@@ -13,13 +13,11 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
 
 import { HeaderComponent } from './shared/components/header/header.component';
-import { SearchBarComponent } from './shared/components/search-bar/search-bar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    SearchBarComponent,
   ],
   imports: [
     BrowserModule,

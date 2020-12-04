@@ -6,16 +6,40 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./topic-list.component.scss']
 })
 export class TopicListComponent implements OnInit {
-  domestics: string[] = [
-                'U.S. Only',
-                'My Feed',
-                'Any',
-                'My Search',
-                'Recommended'
-              ];
-  selectedDomestic: string = 'U.S. Only';
+
+  domestics: {
+    name: string;
+  }[] = [
+    {
+      name: 'U.S. Only'
+    },
+    {
+      name: 'My Feed'
+    },
+    {
+      name: 'Any'
+    },
+    {
+      name: 'Recommended'
+    },
+  ];
+  recentSearch: string[] = [
+    'Django',
+    'Flask',
+    'React',
+    'React Native',
+    'Vue'
+  ];
+  MyCategories: string[] = [
+    'Web Development',
+    'Other - Software development',
+    'Script & Utilites',
+    'Mobile developmetn',
+    'Web Design'
+  ];
+  selectedDomestic: string[] = ['U.S. Only'];
   constructor() { }
-  onNgModelChange(e: Object): void{
+  onNgModelChange(e: object): void{
     console.log(e)
   }
   ngOnInit(): void {

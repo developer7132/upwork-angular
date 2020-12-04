@@ -1,0 +1,22 @@
+@import '../../../../app.component.scss';
+.job-tile{
+    &:hover{
+        background-color: #eee;
+        cursor: pointer;
+        .job-title{
+            color: $dark_green;
+        }
+    }
+    .job-title{
+        display: flex;
+        color: #656565;
+        h4{
+            letter-spacing: 20px;
+        }
+        .actions{
+            .border-circle{
+                color: #656565;
+            }
+        }
+    }
+}

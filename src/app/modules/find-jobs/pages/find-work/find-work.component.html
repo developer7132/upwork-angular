@@ -1,13 +1,28 @@
-<div class="container">
+<div class="container mt-5 main-body">
+    <div class="row">
+        <div class="col-md-2">
+            <h1>Find Work</h1>
+        </div>
+        <div class="col-md-7 searchbox">
+            <input type="text" placeholder="Search for jobs">
+            <button mat-button id="submit">
+                <mat-icon aria-hidden="false" aria-label="Example thumbs up SVG icon">search</mat-icon>
+            </button>
+            <a mat-button>Advanced search</a>
+        </div>
+        <div class="col-md-3">
+            
+        </div>
+    </div>
     <div class="row">
         <div class="col-md-2">
             <app-topic-list></app-topic-list>
         </div>
         <div class="col-md-7">
-            <app-topic-list></app-topic-list>
+            <app-job-list></app-job-list>
         </div>
         <div class="col-md-3">
-            <app-topic-list></app-topic-list>
+            
         </div>
     </div>
 </div>

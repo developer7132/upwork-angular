@@ -13,6 +13,10 @@ import { MyProjectDashboardComponent } from './pages/my-project-dashboard/my-pro
 
 import {MatListModule} from '@angular/material/list';
 import { FormsModule } from '@angular/forms';
+import { JobListComponent } from './components/job-list/job-list.component';
+import {MatIconModule} from '@angular/material/icon';
+import {MatButtonModule} from '@angular/material/button';
+import { JobTileComponent } from './components/job-tile/job-tile.component';
 
 @NgModule({
   declarations: [
@@ -25,13 +29,18 @@ import { FormsModule } from '@angular/forms';
     ProposalsComponent,
     MyStatsComponent,
     ReadinessTestComponent,
-    MyProjectDashboardComponent],
+    MyProjectDashboardComponent,
+    JobListComponent,
+    JobTileComponent,
+  ],
   imports: [
     CommonModule,
     FormsModule,
     FindJobsRoutingModule,
 
-    MatListModule
+    MatListModule,
+    MatIconModule,
+    MatButtonModule,
   ]
 })
 export class FindJobsModule { }
