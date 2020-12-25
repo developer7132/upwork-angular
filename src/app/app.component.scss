@@ -7,7 +7,18 @@ body{
     background-color: $bg_color !important;
 }
 
+.bg-grey{
+    background-color: $bg_color !important;
+}
+
 .border-grey-5{
     border: 1px solid $light_grey;
     border-radius: 5px;
+}
+.line{
+    min-width: 100%;
+    border-top: 1px solid $light_grey;
+}
+.l-h-24{
+    line-height: 24px;
 }

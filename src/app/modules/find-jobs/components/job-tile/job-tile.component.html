@@ -1,7 +1,7 @@
-<div class="job-tile  border-grey-5 p-4">
+<div class="job-tile  border-grey-5 p-4 mt-2" (click)="openModal(job)">
     <div class="job-title">
         <h3>{{job.title}}</h3>
-        
+
     </div>
     <div class="job-detail mt-2 mb-3">
         <span><strong>{{job.jobType}}</strong> - </span>
@@ -14,3 +14,4 @@
         <p>{{job.summary}}</p>
     </div>
 </div>
+<app-job-modal [job]="selectedJob" (closeModal)="closeModal()" [isOpenjobModal]="isOpenjobModal"></app-job-modal>

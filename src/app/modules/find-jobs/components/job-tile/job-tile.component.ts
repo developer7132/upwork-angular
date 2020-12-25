@@ -9,11 +9,22 @@ import { Job, JobObject } from '../../services/job'
 export class JobTileComponent implements OnInit {
 
   @Input() job: Job = new JobObject;
+  isOpenjobModal = new Boolean;
+  selectedJob = new JobObject;
 
+  openModal (job: JobObject) {
+    this.isOpenjobModal = !this.isOpenjobModal
+    this.selectedJob = job
+    console.log(this.selectedJob)
+  }
+  closeModal () {
+    this.isOpenjobModal = false
+    console.log(this.isOpenjobModal)
+  }
   constructor() { }
 
   ngOnInit(): void {
-    
+    this.isOpenjobModal = !this.isOpenjobModal
   }
 
 }

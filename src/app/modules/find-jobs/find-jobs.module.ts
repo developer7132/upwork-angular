@@ -15,8 +15,10 @@ import {MatListModule} from '@angular/material/list';
 import { FormsModule } from '@angular/forms';
 import { JobListComponent } from './components/job-list/job-list.component';
 import {MatIconModule} from '@angular/material/icon';
+import { MatTabsModule } from '@angular/material/tabs'
 import {MatButtonModule} from '@angular/material/button';
 import { JobTileComponent } from './components/job-tile/job-tile.component';
+import { JobModalComponent } from './components/job-tile/job-modal/job-modal.component';
 
 @NgModule({
   declarations: [
@@ -32,6 +34,7 @@ import { JobTileComponent } from './components/job-tile/job-tile.component';
     MyProjectDashboardComponent,
     JobListComponent,
     JobTileComponent,
+    JobModalComponent,
   ],
   imports: [
     CommonModule,
@@ -41,6 +44,7 @@ import { JobTileComponent } from './components/job-tile/job-tile.component';
     MatListModule,
     MatIconModule,
     MatButtonModule,
+    MatTabsModule
   ]
 })
 export class FindJobsModule { }
